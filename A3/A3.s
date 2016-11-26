@@ -22,7 +22,7 @@ main:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movl	$5, -4(%rbp)
-	movl	-4(%rbp), %eax
+	movl	x(%rip), %eax
 	movl	%eax, %esi
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
